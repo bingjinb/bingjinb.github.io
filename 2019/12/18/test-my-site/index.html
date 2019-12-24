@@ -83,7 +83,7 @@
         
     </div>
     <footer class="article-footer">
-      <a data-url="http://bingjinb.github.io/2019/12/18/test-my-site/" data-id="ck4jkdx1d0002tonqaxek7wcg"
+      <a data-url="http://bingjinb.github.io/2019/12/18/test-my-site/" data-id="ck4jkt7tw0002uonqe8csdhhi"
         class="article-share-link">分享</a>
       
     </footer>
@@ -130,12 +130,11 @@
 
 <script type="text/javascript">
   var gitalk = new Gitalk({
-    clientID: '8a6c619380280e1eb92e',
-    clientSecret: 'c8069bf65b6b210d4c9890d08393e18ba52eae46',
-    repo: 'comment',
-    owner: 'bingjinb',
-    admin: ['bingjinb'],
-    // id: location.pathname,      // Ensure uniqueness and length less than 50
+    clientID: '{{ theme.gitalk.ClientID }}',
+    clientSecret: '{{ theme.gitalk.ClientSecret }}',
+    repo: '{{ theme.gitalk.repo }}',
+    owner: '{{ theme.gitalk.owner }}',
+    admin: {{ theme.gitalk.adminUser }},
     id: md5(location.pathname),
     distractionFreeMode: false,  // Facebook-like distraction free mode
     pagerDirection: 'last'
