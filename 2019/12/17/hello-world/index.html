@@ -98,7 +98,7 @@
         
     </div>
     <footer class="article-footer">
-      <a data-url="http://bingjinb.github.io/2019/12/17/hello-world/" data-id="ck4jl8tr400015onqbxix2kih"
+      <a data-url="http://bingjinb.github.io/2019/12/17/hello-world/" data-id="ck4jlegt000010cnqddhlhy3x"
         class="article-share-link">分享</a>
       
     </footer>
@@ -144,11 +144,13 @@
     clientSecret: '',
     repo: 'comment',
     owner: 'bingjinb',
-    admin: [''],
+    admin: ['bingjinb'],
     // id: location.pathname,      // Ensure uniqueness and length less than 50
     id: md5(location.pathname),
-    distractionFreeMode: false,  // Facebook-like distraction free mode
+	createIssueManually: 'true',
+    distractionFreeMode: 'false',
     pagerDirection: 'last'
+
   })
 
   gitalk.render('gitalk-container')
